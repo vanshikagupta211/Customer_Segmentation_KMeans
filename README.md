@@ -7,7 +7,7 @@
 
 This project focuses on **customer segmentation using K-Means clustering**, enhanced with **PCA (Principal Component Analysis)** for dimensionality reduction and **interactive Tableau dashboards** for business insights.
 
-### The objective is to segment customers based on **demographics and spending behavior** to help businesses:
+The objective is to segment customers based on **demographics and spending behavior** to help businesses:
 - Identify high-value customers
 - Understand customer behavior patterns
 - Enable targeted marketing and retention strategies
@@ -16,15 +16,32 @@ This project focuses on **customer segmentation using K-Means clustering**, enha
 
 ## 📂 Dataset Source
 
-This project uses the publicly available Kaggle dataset:  
+This project uses a publicly available Kaggle dataset as the raw data source and a processed dataset generated during analysis.
+
+🔹 Raw Dataset (Original Source)
+
+The original dataset was sourced from Kaggle:
+
 🔗 **Customer Segmentation Dataset**  
 https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 
-
-### Dataset contains:
+Raw dataset contains:
   - Customer demographics
   - Income levels
   - Spending behavior
+
+🔹 Processed Dataset (Used for Dashboard & Modeling)
+
+A cleaned and feature-engineered version of the dataset was created during the analysis and is included in this repository:
+
+📄 **Processed Dataset:**  
+[Data/customer_segments.csv](Data/customer_segments.csv)
+
+This processed dataset contains:
+  - Cluster labels (K-Means output)
+  - Segment names
+  - PCA components (PC1, PC2)
+  - Ready-to-use structure for Tableau dashboards
 
 ---
 
@@ -35,7 +52,7 @@ Businesses often struggle to:
 - Understand spending behavior vs income
 - Design targeted marketing strategies
 
-### This project solves that by:
+This project solves that by:
 - Grouping customers into meaningful segments
 - Visualizing patterns through dashboards
 - Providing actionable insights for decision-makers
@@ -137,7 +154,7 @@ pip install -r requirements.txt
 ## Tableau Dashboard
 
 Download the Tableau dashboard file:  
-[Customer Segmentation Dashboard.twbx](Dashboard/Customer%20Segmentation%20Dashboard.twbx)
+[Dashboard/Customer Segmentation Analysis – K-Means Clustering.twbx](Dashboard/Customer%20Segmentation%20Analysis%20–%20K-Means%20Clustering.twbx)
 
 Open this file using **Tableau Desktop** or **Tableau Reader**.
 
@@ -171,3 +188,4 @@ Customer_Segmentation_KMeans/
 Vanshika Gupta
 
 Data Scientist | Machine Learning | Python | BI Developer
+
