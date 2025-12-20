@@ -168,8 +168,6 @@ This project includes **two professionally designed Tableau dashboards** built f
 - Consistent color palette and professional layout design
 - Tiled dashboard layout optimized for portfolio viewing
 
-These dashboards are designed to simulate **real-world business intelligence applications**, enabling stakeholders to explore customer behavior interactively and derive actionable insights.
-
 ---
 
 ## 📊 Tableau Dashboard Preview
@@ -257,5 +255,6 @@ Customer_Segmentation_KMeans/
 Vanshika Gupta
 
 Data Scientist | Machine Learning | Python | Tableau
+
 
 
