@@ -67,39 +67,108 @@ This project solves that by:
 
 ---
 
-## 🔧 Methodology
+## 📌 Methodology
 
 ### **Data Preparation**
-- Cleaned and standardized customer data
-- Selected relevant features:
+- Loaded and inspected customer demographic and spending data
+- Handled data quality issues and validated data types
+- Selected key numerical features for clustering:
   - Age
   - Annual Income
   - Spending Score
-
-### **K-Means Clustering**
-- Applied **Elbow Method** to determine optimal number of clusters
-- Built **K-Means model** to segment customers
-- Assigned cluster labels to customers
-
-### **PCA (Principal Component Analysis)**
-- Reduced multi-dimensional data to **2 principal components**
-- Enabled clear **visual cluster separation**
-- Improved interpretability and visualization
-
-### **Visualization & Analysis**
-- Built **interactive Tableau dashboards**
-- Added filters, actions, and reset functionality
-- Designed dashboards for both **overview and deep-dive analysis**
+- Standardized features using **StandardScaler** to ensure equal contribution to distance calculations
 
 ---
 
-## 📊 Tableau Dashboard Highlights
-- Customer Segmentation Overview
-- Average Income & Spending by Segment
-- Income vs Spending Analysis
-- PCA-based Cluster Visualization
-- Gender & Income Distribution by Segment
-- Interactive filters and reset functionality
+### **Exploratory Data Analysis (EDA)**
+- Analyzed feature distributions and relationships
+- Visualized correlations and patterns among income, age, and spending behavior
+- Identified natural customer group tendencies prior to modeling
+
+---
+
+### **Optimal Cluster Selection**
+- Applied the **Elbow Method (WCSS)** to identify potential cluster counts
+- Evaluated cluster quality using the **Silhouette Score**
+- Compared multiple `k` values to balance cluster separation and interpretability
+
+---
+
+### **K-Means Clustering**
+- Trained **K-Means model** with optimal cluster count
+- Assigned cluster labels to each customer
+- Validated clustering results using:
+  - **Silhouette Score**
+  - Cluster size distribution
+  - Cluster profiling metrics
+
+---
+
+### **Cluster Profiling & Interpretation**
+- Calculated average **Age, Income, and Spending Score** per cluster
+- Assigned **business-friendly segment names** based on customer behavior
+- Interpreted each cluster from a marketing and business perspective
+
+---
+
+### **PCA (Principal Component Analysis)**
+- Reduced multi-dimensional feature space to **2 principal components**
+- Visualized cluster separation in a 2D PCA space
+- Verified cluster compactness and separation visually
+
+---
+
+### **Visualization & Analysis**
+- Built **interactive Tableau dashboards** using model output
+- Implemented:
+  - Filters (Segment, Gender, Income range)
+  - Parameters and dashboard actions
+  - Reset functionality for enhanced usability
+- Designed dashboards for both:
+  - **Executive overview**
+  - **Customer behavior deep-dive analysis**
+
+---
+
+## 📊 Visualization & Dashboarding (Tableau)
+
+This project includes **two professionally designed Tableau dashboards** built for executive-level storytelling and deep analytical exploration.
+
+### 🔹 Dashboard 1: Customer Segmentation Overview
+- High-level distribution of customer segments
+- Segment-wise and gender-wise customer breakdown
+- Interactive donut charts with dynamic labels
+- KPI-style customer counts
+- Global dashboard filters for:
+  - Segment
+  - Gender
+  - Income range
+  - Spending score
+
+### 🔹 Dashboard 2: Customer Behavior Deep Dive
+- Income vs Spending scatter plot with cluster coloring
+- PCA-based 2D cluster separation with reference lines
+- Advanced tooltips displaying:
+  - Gender
+  - Age
+  - Income
+  - Spending score
+  - Segment name
+- Interactive filtering using **dashboard actions**
+- Parameter-driven views for flexible data exploration
+
+### 🔹 Advanced Tableau Features Implemented
+- **Parameters** for dynamic dimension switching
+- **Calculated fields** for:
+  - Segment labeling
+  - Dynamic titles
+  - Tooltip customization
+- **Dashboard actions** (click-to-filter behavior)
+- **Reset Filters button** using parameter actions
+- Consistent color palette and professional layout design
+- Tiled dashboard layout optimized for portfolio viewing
+
+These dashboards are designed to simulate **real-world business intelligence applications**, enabling stakeholders to explore customer behavior interactively and derive actionable insights.
 
 ---
 
@@ -187,5 +256,6 @@ Customer_Segmentation_KMeans/
 
 Vanshika Gupta
 
-Data Scientist | Machine Learning | Python | BI Developer
+Data Scientist | Machine Learning | Python | Tableau
+
 
